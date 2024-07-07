@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: photoprism
+
+resources:
+  - ingress/photoprism-ingress.yaml
+  - namespace/photoprism-namespace.yaml
+  - secrets/ingress-secrets.yaml
+  - secrets/mariadb-secrets.yaml
+  - secrets/photoprism-secrets.yaml
+  - service/mariadb-service.yaml
+  - service/photoprism-service.yaml
+  - statefulset/mariadb-statefulset.yaml
+  - statefulset/photoprism-statefulset.yaml
+  - pvc/mariadb-pvc.yaml
+  - pvc/photoprism-originals-pvc.yaml
+  - pvc/photoprism-import-pvc.yaml
+  - pvc/photoprism-storage-pvc.yaml
+
