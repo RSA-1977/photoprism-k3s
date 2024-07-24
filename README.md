@@ -2,23 +2,31 @@
 
 ## Prerequisites
 
-Before deploying `photoprism-k3s`, you will need to have a Kubernetes cluster deployed. Additionally, you need to have Longhorn installed in your Kubernetes cluster. Longhorn is a distributed block storage system for Kubernetes.
+Before deploying `photoprism-k3s`, you need to have a Kubernetes cluster set up. Additionally, Longhorn, a distributed block storage system for Kubernetes, must be installed in your cluster.
+
+To access PhotoPrism, ensure that `photoprism.test.com` resolves to the IP address of your Kubernetes master node. This can typically be done by adding an entry to your local `/etc/hosts` file or configuring your DNS appropriately.
 
 ## To deploy the photoprism-k3s, follow these steps:
 
-1. **Navigate to the photoprism-k3s directory:**
+1. **Clone this repository:**
+
+    ```sh
+    git clone <repository-url>
+    ```
+
+2. **Navigate to the photoprism-k3s directory:**
 
     ```sh
     cd photoprism-k3s
     ```
 
-2. **Deploy the resources using kubectl:**
+3. **Deploy the resources using kubectl:**
 
     ```sh
     kubectl create -k .
     ```
 
-3. **Check the status of the pods in the photoprism namespace:**
+4. **Check the status of the pods in the photoprism namespace:**
 
     ```sh
     kubectl get pods -n photoprism
@@ -26,5 +34,5 @@ Before deploying `photoprism-k3s`, you will need to have a Kubernetes cluster de
 
 ## Notes
 
-- If Longhorn is not installed, follow the [Longhorn installation guide](https://longhorn.io/docs/1.6.2/deploy/install/) to set it up.
-- You can configure PhotoPrism to use NFS volumes instead of Longhorn. Look in ./statefulset/photoprism-statefulset.yaml for examples.
+- If Longhorn is not installed, follow the [Longhorn installation guide](https://longhorn.io/docs/1.2.4/deploy/install/) to set it up.
+- You can configure Photoprism to use NFS volumes instead of Longhorn. Look in ./statefulset/photoprism-statefulset.yaml for examples.
