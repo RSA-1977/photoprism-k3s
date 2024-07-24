@@ -4,7 +4,7 @@
 
 Before deploying `photoprism-k3s`, you need to have a Kubernetes cluster set up. Additionally, Longhorn, a distributed block storage system for Kubernetes, must be installed in your cluster.
 
-To access PhotoPrism, ensure that `photoprism.test.com` resolves to the IP address of your Kubernetes master node. This can typically be done by adding an entry to your local `/etc/hosts` file or configuring your DNS appropriately.
+To access PhotoPrism, ensure that `photoprism.test.com` resolves to the IP address of your Kubernetes nodes. This can typically be done by adding an entry to your local `/etc/hosts` file or configuring your DNS appropriately.
 
 ## To deploy the photoprism-k3s, follow these steps:
 
