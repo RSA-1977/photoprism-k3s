@@ -11,7 +11,7 @@ To access PhotoPrism, ensure that `photoprism.test.com` resolves to the IP addre
 1. **Clone this repository:**
 
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/RSA-1977/photoprism-k3s.git
     ```
 
 2. **Navigate to the photoprism-k3s directory:**
