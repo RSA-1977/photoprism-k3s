@@ -44,6 +44,13 @@ spec:
           httpGet:
             path: /api/v1/status
             port: http
+        resources:
+          requests:
+            memory: "2Gi"
+            cpu: "500m"
+          limits:
+            memory: "4Gi"
+            cpu: "750m"
       volumes:
       - name: originals
         persistentVolumeClaim:

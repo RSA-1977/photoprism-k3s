@@ -4,17 +4,17 @@ kind: Kustomization
 namespace: photoprism
 
 resources:
-  - ingress/photoprism-ingress.yaml
-  - namespace/photoprism-namespace.yaml
-  - secrets/ingress-secrets.yaml
-  - secrets/mariadb-secrets.yaml
-  - secrets/photoprism-secrets.yaml
-  - service/mariadb-service.yaml
-  - service/photoprism-service.yaml
-  - statefulset/mariadb-statefulset.yaml
-  - statefulset/photoprism-statefulset.yaml
-  - pvc/mariadb-pvc.yaml
-  - pvc/photoprism-originals-pvc.yaml
-  - pvc/photoprism-import-pvc.yaml
-  - pvc/photoprism-storage-pvc.yaml
+  - ingress/photoprism-ingress.yml
+  - namespace/photoprism-namespace.yml
+  - secrets/ingress-secrets.yml
+  - secrets/mariadb-secrets.yml
+  - secrets/photoprism-secrets.yml
+  - service/mariadb-service.yml
+  - service/photoprism-service.yml
+  - statefulset/mariadb-statefulset.yml
+  - statefulset/photoprism-statefulset.yml
+  - pvc/mariadb-pvc.yml
+  - pvc/photoprism-originals-pvc.yml
+  - pvc/photoprism-import-pvc.yml
+  - pvc/photoprism-storage-pvc.yml
 
