@@ -34,5 +34,5 @@ To access PhotoPrism, ensure that `photoprism.test.com` resolves to the IP addre
 
 ## Notes
 
-- If Longhorn is not installed, follow the [Longhorn installation guide](https://longhorn.io/docs/1.2.4/deploy/install/) to set it up.
+- If Longhorn is not installed, follow the [Longhorn installation guide](https://longhorn.io/docs/1.6.2/deploy/install/install-with-helm/) to set it up.
 - You can configure Photoprism to use NFS volumes instead of Longhorn. Look in ./statefulset/photoprism-statefulset.yaml for examples.
